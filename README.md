@@ -55,9 +55,11 @@ Introduction slide with centered content and background graphics.
 ---
 layout: intro
 ---
-
-# Introduction
-## Subtitle text
+# Intro
+:: sub1 ::
+sub1
+:: sub2 ::
+sub2
 ```
 
 ### Section Layout
@@ -81,6 +83,7 @@ Content layout with image positioned on the left side.
 ```markdown
 ---
 layout: image-left
+image: https://cover.sli.dev
 ---
 
 # Content Title
@@ -96,6 +99,7 @@ Content layout with image positioned on the right side.
 ```markdown
 ---
 layout: image-right
+image: https://cover.sli.dev
 ---
 
 # Content Title
