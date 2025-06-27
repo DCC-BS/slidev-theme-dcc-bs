@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import DataBsLogo from '../assets/DataBSLogo.svg';
+import BackgroundImage from '../assets/image5.png';
 
 interface InputProps {
     flexLeft?: number;
@@ -28,11 +30,11 @@ const props = withDefaults(defineProps<InputProps>(),
         </div>
 
         <div class="absolute right-0 right-1 bottom-20 z-0">
-            <img src="/theme/image5.png" alt="Background Image" />
+            <img :src="BackgroundImage" alt="Background Image" />
         </div>
 
         <div class="absolute bottom-10 right-10 z-10">
-            <img class="w-15" src="/theme/DataBSLogo.svg">
+            <img class="w-15" :src="DataBsLogo" alt="DataBS Logo">
         </div>
     </div>
 </template>

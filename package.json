@@ -23,11 +23,13 @@
   },
   "//": "Learn more: https://sli.dev/guide/write-theme.html",
   "slidev": {
-    "colorSchema": "both",
+    "colorSchema": "light",
     "defaults": {
       "fonts": {
-        "sans": "Nunito Sans",
-        "mono": "Fira Code"
+        "sans": "Arial",
+        "serif": "Roboto Slab",
+        "mono": "Fira Code",
+        "canvasWidth": "1920"
       }
     }
   }
