@@ -1,50 +1,167 @@
-# slidev-theme-dcc-bs
+# Slidev Theme for DCC Basel-Stadt
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-dcc-bs?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-dcc-bs)
+A custom Slidev theme designed for presentations by the Department of Data and Statistics (DCC) of Basel-Stadt.
 
-A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
+## Installation
 
-<!--
-  Learn more about how to write a theme:
-  https://sli.dev/guide/write-theme.html
---->
+Install the theme using bun:
 
-<!--
-  run `npm run dev` to check out the slides for more details of how to start writing a theme
--->
+```bash
+bun add git+https://github.com/DCC-BS/slidev-theme-dcc-bs.git#v0.0.1
+```
 
-<!--
-  Put some screenshots here to demonstrate your theme
+Replace `v0.0.1` with the version you want to install.
 
-  Live demo: [...]
--->
+## Usage
 
-## Install
+To use this theme in your Slidev presentation, add `theme: dcc-bs` to the frontmatter of your `slides.md` file:
 
-Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
+```markdown
+---
+theme: dcc-bs
+canvasWidth: 1920
+mdc: true
+---
 
-<pre><code>---
-theme: <b>dcc-bs</b>
----</code></pre>
+# Your Presentation Title
 
-Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).
+Start your presentation here...
+```
 
-## Layouts
+## Available Layouts
 
-This theme provides the following layouts:
+This theme provides several specialized layouts for different types of slides:
 
-> TODO:
+### Cover Layout
+![Cover Layout Preview](./_imgs/cover.png)
 
-## Components
+The main title slide with Basel-Stadt branding and background imagery.
 
-This theme provides the following components:
+```markdown
+---
+layout: cover
+---
 
-> TODO:
+# Presentation Title
+## Subtitle
+```
 
-## Contributing
+### Intro Layout
+![Intro Layout Preview](./_imgs/intro.png)
 
-- `npm install`
-- `npm run dev` to start theme preview of `example.md`
-- Edit the `example.md` and style to see the changes
-- `npm run export` to generate the preview PDF
-- `npm run screenshot` to generate the preview PNG
+Introduction slide with centered content and background graphics.
+
+```markdown
+---
+layout: intro
+---
+
+# Introduction
+## Subtitle text
+```
+
+### Section Layout
+![Section Layout Preview](./_imgs/section.png)
+
+Section divider slides to organize your presentation into chapters.
+
+```markdown
+---
+layout: section
+---
+
+# Section Title
+```
+
+### Image Left Layout
+![Image Left Layout Preview](./_imgs/img-left.png)
+
+Content layout with image positioned on the left side.
+
+```markdown
+---
+layout: image-left
+---
+
+# Content Title
+
+Your content goes here while the image appears on the left.
+```
+
+### Image Right Layout
+![Image Right Layout Preview](./_imgs/img-right.png)
+
+Content layout with image positioned on the right side.
+
+```markdown
+---
+layout: image-right
+---
+
+# Content Title
+
+Your content goes here while the image appears on the right.
+```
+
+### Two Columns Layout
+![Two Columns Layout Preview](./_imgs/two-cols.png)
+
+Split content into two equal columns.
+
+```markdown
+---
+layout: two-cols
+---
+
+# Two Column Layout
+
+::left::
+Content for the left column
+
+::right::
+Content for the right column
+```
+
+### Blank Layout
+![Blank Layout Preview](./_imgs/blank.png)
+
+Clean slate for custom content without predefined structure.
+
+```markdown
+---
+layout: blank
+---
+
+# Custom Content
+
+Design your slide exactly as needed.
+```
+
+### Additional Layouts
+
+The theme also includes these layouts:
+
+- **Default**: Standard content layout
+- **Fact**: Highlight important facts or statistics
+- **Quote**: Display quotes with proper styling
+- **Statement**: Emphasize key statements or conclusions
+
+## Development
+
+To develop or customize this theme:
+
+```bash
+# Install dependencies
+bun install
+
+# Start development server
+bun run dev
+
+# Build the theme
+bun run build
+```
+
+## License
+
+This theme is created for the Department of Data and Statistics (DCC) of Basel-Stadt.
+

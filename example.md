@@ -6,68 +6,64 @@ canvasWidth: 1920
 # Slidev Theme Starter
 
 ---
-
-# What is Slidev?
-
-Slidev is a slide maker and presentation tool designed for developers. It includes the following features:
-
-- 📝 **Text-based** - focus on your content with Markdown, then style it later
-- 🎨 **Themable** - themes can be shared and reused as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+layout: intro
+---
+# Intro
+:: sub1 ::
+sub1
+:: sub2 ::
+sub2
 
 ---
+layout: blank
+---
+# Blank Slide
+- This is a blank slide.
 
-# Navigation
+---
+layout: fact
+---
+# Fact Slide
 
-Hover on the bottom-left corner to see the navigation's controls panel
+---
+layout: image-left
+image: https://cover.sli.dev
+---
+# Image Left Layout
 
-## Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>space</kbd> / <kbd>tab</kbd> / <kbd>right</kbd> | next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+This is an image left layout. You can use it to display images on the left side of the slide.
 
 ---
 layout: image-right
 image: https://cover.sli.dev
 ---
-
-# Code
-
-Use code snippets and get the highlighting directly!
-
-```ts
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: Partial<User>) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
+# Image Right Layout
+This is an image right layout. You can use it to display images on the right side of the slide.
 
 ---
-layout: center
-class: "text-center"
+layout: quote
 ---
+# Quote Slide
+> This is a quote slide. You can use it to highlight important quotes or statements.
 
-# Learn More
+---
+layout: two-cols
+---
+:: left ::
+# Left Column
+This layout allows you to have two columns side by side. You can use it to compare information
+:: right ::
+# Right Column
+or present related content in a structured way.
 
-[Documentation](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+---
+layout: statement
+---
+# Statement Slide
+This is a statement slide. You can use it to present a key point or argument.
+
+---
+layout: section
+---
+# Section Slide
+This is a section slide. You can use it to introduce a new section in your presentation.
