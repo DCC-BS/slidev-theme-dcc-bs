@@ -4,10 +4,22 @@ A custom Slidev theme designed for presentations by the Department of Data and S
 
 ## Installation
 
-Install the theme using bun:
+### Using bun (recommended)
 
 ```bash
 bun add git+https://github.com/DCC-BS/slidev-theme-dcc-bs.git#v0.0.1
+```
+
+### Using npm
+
+```bash
+npm install git+https://github.com/DCC-BS/slidev-theme-dcc-bs.git#v0.0.1
+```
+
+### Using yarn
+
+```bash
+yarn add git+https://github.com/DCC-BS/slidev-theme-dcc-bs.git#v0.0.1
 ```
 
 Replace `v0.0.1` with the version you want to install.
